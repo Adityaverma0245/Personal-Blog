@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jewelry Shop Blog</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .blog-header {
+            background-color: #343a40;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+            border-bottom: 4px solid #d4af37;
+        }
+
+        .blog-header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        .blog-header p {
+            font-size: 1.2rem;
+            font-style: italic;
+        }
+
+        .blog-post {
+            margin-bottom: 30px;
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .blog-post h2 {
+            color: #343a40;
+        }
+
+        .blog-post img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .blog-post p {
+            font-size: 1rem;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .sidebar {
+            background-color: #f1f1f1;
+            padding: 20px;
+            border-radius: 8px;
+
+
+        }
+
+        .sidebar h4 {
+            color: #343a40;
+            margin-bottom: 15px;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .sidebar ul li {
+            margin-bottom: 8px;
+            font-size: 1rem;
+        }
+
+        .sidebar ul li a {
+            text-decoration: none;
+            color: #d4af37;
+            transition: color 0.3s;
+        }
+
+        .sidebar ul li a:hover {
+            color: #343a40;
+        }
+
+        .category-content {
+            display: none;
+            margin-top: 20px;
+        }
+
+        .category-content img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .footer {
+            background-color: #343a40;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .footer a {
+            color: #d4af37;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Blog Header -->
+    <div class="blog-header">
+        <h1>Welcome to Our Jewelry Shop Blog</h1>
+        <p>Your trusted source for exquisite jewelry pieces and styling tips</p>
+    </div>
+
+    <!-- Main Content Area -->
+    <div class="container mt-5">
+        <div class="row">
+
+            <!-- Blog Posts -->
+            <div class="col-md-8">
+                <div class="blog-post">
+                    <h2>Why You Should Invest in Gold Jewelry</h2>
+                    <img src="gold.png" alt="Gold Jewelry" class="img-fluid">
+                    <p>Gold jewelry has always been a symbol of wealth and beauty. In this post, we will explore why
+                        investing in gold jewelry is not only a wise financial choice but also a way to add timeless
+                        beauty to your collection...</p>
+                    <a href="javascript:void(0);" onclick="toggleContent('goldPost')">Read more...</a>
+
+                    <div id="goldPost" class="full-content">
+                        <p>Gold is not used as a currency today, but its role as money makes it superior to any
+                            currency.</p>
+                        <p>In fact, gold has been money longer than any currency in history. Gold has been a store of
+                            value for at least 3,000 years, while one of the longest currencies in history, the British
+                            Pound Sterling, is about 1,200 years old.</p>
+                        <p>One of the crucial promises of money is that it serves as a long-term store of value. Gold
+                            fulfills this promise better than any currency. Look how much purchasing power all major
+                            government currencies have lost compared to gold.</p>
+                        <p>Since 1900, physical gold has been the best long-term store of value.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="blog-post">
+                    <h2>10 Tips for Maintaining Your Diamond Jewelry</h2>
+                    <img src="diamond.png" alt="Diamond Jewelry" class="img-fluid">
+                    <p>Diamonds are a girl's best friend, but they require care to keep them sparkling. In this post, we
+                        will share practical tips on how to clean, store, and maintain your diamond jewelry...</p>
+                    <a href="javascript:void(0);" onclick="toggleContent('diamondPost')">Read more...</a>
+
+                    <div id="diamondPost" class="full-content">
+                        <ul>
+                            <li><strong>Regular Cleaning:</strong> Clean your diamond jewelry regularly with a mild soap
+                                solution and a soft cloth or brush to remove dirt and oils.</li>
+                            <li><strong>Store Properly:</strong> Keep your jewelry in a fabric-lined box or pouch to
+                                avoid scratches and damage.</li>
+                            <li><strong>Avoid Chemicals:</strong> Remove jewelry when using harsh chemicals like
+                                cleaning products, perfume, or hair sprays.</li>
+                            <li><strong>Limit Physical Activity:</strong> Take off jewelry during physical activities
+                                like exercise or gardening to prevent damage.</li>
+                            <li><strong>Check Settings Regularly:</strong> Ensure prongs and settings are secure to
+                                prevent diamonds from loosening or falling out.</li>
+                            <li><strong>Avoid Impact:</strong> Protect diamonds from sharp blows or impacts that could
+                                cause chipping or cracking.</li>
+                            <li><strong>Limit Exposure to Sunlight:</strong> Prolonged exposure to direct sunlight can
+                                affect the setting or cause metal discoloration.</li>
+                            <li><strong>Polishing:</strong> Have your diamonds professionally polished periodically to
+                                maintain their brilliance.</li>
+                            <li><strong>Use a Soft Cloth:</strong> When cleaning, always use a soft cloth to avoid
+                                scratching the surface of the diamond.</li>
+                            <li><strong>Professional Inspections:</strong> Have your diamond jewelry inspected by a
+                                jeweler once a year to ensure it's in good condition.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-8">
+                <div class="blog-post">
+                    <h2>The Latest Jewelry Trends of 2025</h2>
+                    <img src="trends jewelry.png" alt="Jewelry Trends" class="img-fluid">
+                    <p>As the new year unfolds, the jewelry industry is seeing some exciting trends. From minimalist
+                        designs to vintage-inspired pieces, stay updated with the latest jewelry trends to make sure
+                        your collection is on point...</p>
+                    <a href="javascript:void(0);" onclick="toggleContent('trendsPost')">Read more...</a>
+
+                    <div id="trendsPost" class="full-content">
+                        <ul>
+                            <li><strong>Maximalist Designs:</strong> Ornate and lavish pieces, such as tassel earrings
+                                and Baroque-inspired designs, are gaining popularity.</li>
+                            <li><strong>Layered Necklaces:</strong> Combining multiple necklaces of varying lengths and
+                                styles allows for personalized and dynamic looks.</li>
+                            <li><strong>Mismatched Earrings:</strong> Wearing earrings that differ in design or length
+                                adds a playful and unique touch to outfits.</li>
+                            <li><strong>Pearls and Shells:</strong> Incorporating pearls and shells into jewelry offers
+                                a blend of elegance and natural beauty.</li>
+                            <li><strong>Two-Tone Jewelry:</strong> Mixing metals, such as gold and silver, creates
+                                versatile pieces that complement various styles.</li>
+                            <li><strong>Chunky Chains:</strong> Bold chain necklaces and bracelets make strong style
+                                statements, adding a touch of edginess.</li>
+                            <li><strong>Colorful Gemstones:</strong> Bright gemstones in shades like aqua, cobalt, and
+                                garnet infuse vibrant colors into designs.</li>
+                            <li><strong>Beaded Jewelry:</strong> Pieces featuring large beads, whether in gemstones or
+                                other materials, offer a fun and textured aesthetic.</li>
+                            <li><strong>Personalized Pieces:</strong> Customized jewelry, such as nameplate necklaces
+                                and initial rings, adds a personal touch to accessories.</li>
+                            <li><strong>Classic Studs and Hoops:</strong> Timeless designs like stud earrings and simple
+                                hoop earrings remain popular for their versatility and understated elegance.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="col-md-4">
+                <div class="sidebar">
+                    <h4>Shop by Category</h4>
+                    <ul>
+                        <li><a href="javascript:void(0);" onclick="showCategory('gold')">Gold Jewelry</a></li>
+                        <li><a href="javascript:void(0);" onclick="showCategory('diamonds')">Diamonds</a></li>
+                        <li><a href="javascript:void(0);" onclick="showCategory('wedding')">Wedding Rings</a></li>
+                        <li><a href="javascript:void(0);" onclick="showCategory('earrings')">Earrings</a></li>
+                        <li><a href="javascript:void(0);" onclick="showCategory('necklaces')">Necklaces</a></li>
+                    </ul>
+                    <hr>
+                    <h4>About Us</h4>
+                    <p>We are passionate about providing high-quality, beautifully crafted jewelry that suits every
+                        occasion. Discover our collections, tips, and trends right here on our blog.</p>
+                </div>
+
+                <!-- Category Content -->
+                <div id="gold" class="category-content">
+                    <h5>Gold Jewelry</h5>
+                    <p>Gold jewelry has been a symbol of wealth and luxury for centuries. Whether you prefer yellow
+                        gold, white gold, or rose gold, there's a style for every occasion.</p>
+                    <img src="gold image.png" alt="Gold Jewelry">
+                </div>
+
+                <div id="diamonds" class="category-content">
+                    <h5>Diamonds</h5>
+                    <p>Diamonds are timeless and are perfect for special occasions. Learn more about diamond quality,
+                        cuts, and how to choose the right diamond for you.</p>
+                    <img src="diamondjewelry.png" alt="Diamonds">
+                </div>
+
+                <div id="wedding" class="category-content">
+                    <h5>Wedding Rings</h5>
+                    <p>Wedding rings are a symbol of eternal love. Explore our range of wedding rings, from classic
+                        bands to modern designs, that will perfectly complement your special day.</p>
+                    <img src="wedding.png" alt="Wedding Rings">
+                </div>
+
+                <div id="earrings" class="category-content">
+                    <h5>Earrings</h5>
+                    <p>Earrings come in many styles, including studs, hoops, and chandeliers. Browse through our latest
+                        collection to find the perfect pair for every occasion.</p>
+                    <img src="earring.png" alt="Earrings">
+                </div>
+
+                <div id="necklaces" class="category-content">
+                    <h5>Necklaces</h5>
+                    <p>Necklaces can add a stunning touch to any outfit. From delicate chains to bold statement pieces,
+                        explore our collection of necklaces in various styles and materials.</p>
+                    <img src="necklaces.png" alt="Necklaces">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2025 Jewelry Shop Blog. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of
+                Service</a></p>
+    </div>
+    <!-- JavaScript for interactivity -->
+    <script>
+        function showCategory(category) {
+            // Hide all category content
+            const categories = document.querySelectorAll('.category-content');
+            categories.forEach(cat => cat.style.display = 'none');
+
+            // Show the selected category content
+            const selectedCategory = document.getElementById(category);
+            if (selectedCategory) {
+                selectedCategory.style.display = 'block';
+            }
+        }
+        function toggleContent(postId) {
+            var content = document.getElementById(postId);
+            if (content.style.display === "none" || content.style.display === "") {
+                content.style.display = "block";
+            } else {
+                content.style.display = "none";
+            }
+        }
+    </script>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
